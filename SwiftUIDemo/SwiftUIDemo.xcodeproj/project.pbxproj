@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		E6C7A2412A791BAA00CD9B66 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */; };
-		E6C7A2432A791BAA00CD9B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2422A791BAA00CD9B66 /* ContentView.swift */; };
 		E6C7A2452A791BAB00CD9B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C7A2442A791BAB00CD9B66 /* Assets.xcassets */; };
 		E6C7A2482A791BAB00CD9B66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C7A2472A791BAB00CD9B66 /* Preview Assets.xcassets */; };
+		E6C7A25A2A79491100CD9B66 /* ContactPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2592A79491100CD9B66 /* ContactPageScreen.swift */; };
+		E6C7A25D2A7949AC00CD9B66 /* ContactPageActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A25C2A7949AC00CD9B66 /* ContactPageActionButton.swift */; };
+		E6C7A25F2A794FA500CD9B66 /* BlockAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A25E2A794FA500CD9B66 /* BlockAccountButton.swift */; };
+		E6C7A2612A798C2700CD9B66 /* CallScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2602A798C2700CD9B66 /* CallScreen.swift */; };
+		E6C7A2632A798E6800CD9B66 /* CallActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2622A798E6800CD9B66 /* CallActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E6C7A23D2A791BAA00CD9B66 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
-		E6C7A2422A791BAA00CD9B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6C7A2442A791BAB00CD9B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6C7A2472A791BAB00CD9B66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6C7A2592A79491100CD9B66 /* ContactPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPageScreen.swift; sourceTree = "<group>"; };
+		E6C7A25C2A7949AC00CD9B66 /* ContactPageActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPageActionButton.swift; sourceTree = "<group>"; };
+		E6C7A25E2A794FA500CD9B66 /* BlockAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockAccountButton.swift; sourceTree = "<group>"; };
+		E6C7A2602A798C2700CD9B66 /* CallScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScreen.swift; sourceTree = "<group>"; };
+		E6C7A2622A798E6800CD9B66 /* CallActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		E6C7A23F2A791BAA00CD9B66 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E6C7A25B2A79499500CD9B66 /* Views */,
+				E6C7A2582A7948DC00CD9B66 /* Screens */,
 				E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */,
-				E6C7A2422A791BAA00CD9B66 /* ContentView.swift */,
 				E6C7A2442A791BAB00CD9B66 /* Assets.xcassets */,
 				E6C7A2462A791BAB00CD9B66 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				E6C7A2472A791BAB00CD9B66 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6C7A2582A7948DC00CD9B66 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E6C7A2592A79491100CD9B66 /* ContactPageScreen.swift */,
+				E6C7A2602A798C2700CD9B66 /* CallScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E6C7A25B2A79499500CD9B66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6C7A25C2A7949AC00CD9B66 /* ContactPageActionButton.swift */,
+				E6C7A25E2A794FA500CD9B66 /* BlockAccountButton.swift */,
+				E6C7A2622A798E6800CD9B66 /* CallActionButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C7A2432A791BAA00CD9B66 /* ContentView.swift in Sources */,
 				E6C7A2412A791BAA00CD9B66 /* SwiftUIDemoApp.swift in Sources */,
+				E6C7A25D2A7949AC00CD9B66 /* ContactPageActionButton.swift in Sources */,
+				E6C7A2612A798C2700CD9B66 /* CallScreen.swift in Sources */,
+				E6C7A25A2A79491100CD9B66 /* ContactPageScreen.swift in Sources */,
+				E6C7A25F2A794FA500CD9B66 /* BlockAccountButton.swift in Sources */,
+				E6C7A2632A798E6800CD9B66 /* CallActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
