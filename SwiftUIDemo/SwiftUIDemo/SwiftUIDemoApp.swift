@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct SwiftUIDemoApp: App {
+    @ObservedObject
+    var callScreenManager: CallScreenManager = CallScreenManager()
+    @ObservedObject
+    var contactsManager: ContactsManager = ContactsManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContactPageScreen()
+            ZStack {
+                ContactsScreen()
+                if callScreenManager.isVisible,
+                   let contact = callScreenManager.contact {
+                    CallScreen(contactModel: contact)
+                }
+            }
+            .environmentObject(callScreenManager)
+            .environmentObject(contactsManager)
         }
     }
 }

@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContactPageScreen: View {
+    @EnvironmentObject
+    var callScreenManager: CallScreenManager
+    
+    let contactModel: ContactModel
+    
     var body: some View {
         VStack {
             Spacer()
@@ -17,13 +22,15 @@ struct ContactPageScreen: View {
                     Circle()
                         .foregroundColor(.gray)
                         .frame(width: 128)
-                    Image(systemName: "person.fill")
+                    Image(contactModel.photoName)
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
                         .foregroundColor(.white)
-                        .frame(width: 64, height: 64)
+                        .frame(width: 128, height: 128)
+                        .clipShape(Circle())
                 }
             }
-            Text("+1 (1234) 122-1-22")
+            Text("\(contactModel.firstName) \(contactModel.lastName)")
                 .font(.largeTitle)
             HStack {
                 ContactPageActionButton(
@@ -34,7 +41,10 @@ struct ContactPageScreen: View {
                 ContactPageActionButton(
                     title: "вызов",
                     imageSystemName: "phone.fill",
-                    action: { }
+                    action: {
+                        callScreenManager.contact = contactModel
+                        callScreenManager.isVisible = true
+                    }
                 )
                 ContactPageActionButton(
                     title: "видео",
@@ -59,6 +69,15 @@ struct ContactPageScreen: View {
 
 struct ContactPageScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ContactPageScreen()
+        ContactPageScreen(
+            contactModel: ContactModel(
+                id: UUID(),
+                phoneNumber: "+1(123)1234567",
+                firstName: "Thomas",
+                lastName: "Anderson",
+                isBlocked: false,
+                photoName: "Neo"
+            )
+        )
     }
 }

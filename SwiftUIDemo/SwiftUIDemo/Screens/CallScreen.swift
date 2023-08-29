@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct CallScreen: View {
+    @EnvironmentObject
+    var callScreenManager: CallScreenManager
     // MARK: - Properties
     
-    /// Номер телефона
-    let phoneNumber: String
+    let contactModel: ContactModel
     
     var body: some View {
         ZStack {
@@ -26,7 +27,7 @@ struct CallScreen: View {
             .ignoresSafeArea(.all)
             VStack {
                 Spacer()
-                Text(phoneNumber)
+                Text("\(contactModel.firstName) \(contactModel.lastName)")
                     .font(.title)
                     .foregroundColor(.white)
                 Text("вызов...")
@@ -41,7 +42,10 @@ struct CallScreen: View {
                 }
                 .padding(.horizontal, 64)
                 Spacer()
-                CallActionButton(imageSystemName: "phone.down.fill", title: nil, backgroundColor: .red, action: {})
+                CallActionButton(imageSystemName: "phone.down.fill", title: nil, backgroundColor: .red, action: {
+                    callScreenManager.isVisible = false
+                    callScreenManager.contact = nil
+                })
                 Spacer()
             }
         }
@@ -50,6 +54,15 @@ struct CallScreen: View {
 
 struct CallScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CallScreen(phoneNumber: "+7-921-123-45-67")
+        CallScreen(
+            contactModel: ContactModel(
+                id: UUID(),
+                phoneNumber: "+1(123)1234567",
+                firstName: "Thomas",
+                lastName: "Anderson",
+                isBlocked: false,
+                photoName: "Horsie"
+            )
+        )
     }
 }

@@ -20,7 +20,7 @@ struct CallActionButton: View {
     let action: () -> Void
     
     var body: some View {
-        Button(action: {}) {
+        Button(action: action) {
             VStack {
                 ZStack {
                     Circle()
