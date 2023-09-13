@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E651C2652A9DFC43008F7088 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E651C2642A9DFC43008F7088 /* ContactsManager.swift */; };
+		E69451102A9E351A009A58D1 /* ContactEditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E694510F2A9E351A009A58D1 /* ContactEditScreen.swift */; };
 		E6C7A2412A791BAA00CD9B66 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */; };
 		E6C7A2452A791BAB00CD9B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C7A2442A791BAB00CD9B66 /* Assets.xcassets */; };
 		E6C7A2482A791BAB00CD9B66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C7A2472A791BAB00CD9B66 /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E651C2642A9DFC43008F7088 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		E694510F2A9E351A009A58D1 /* ContactEditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditScreen.swift; sourceTree = "<group>"; };
 		E6C7A23D2A791BAA00CD9B66 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		E6C7A2442A791BAB00CD9B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				E6D766B42A828B53001236FB /* ContactsScreen.swift */,
 				E6C7A2592A79491100CD9B66 /* ContactPageScreen.swift */,
+				E694510F2A9E351A009A58D1 /* ContactEditScreen.swift */,
 				E6C7A2602A798C2700CD9B66 /* CallScreen.swift */,
 			);
 			path = Screens;
@@ -201,6 +204,7 @@
 				E6D766BC2A829320001236FB /* CallScreenManager.swift in Sources */,
 				E651C2652A9DFC43008F7088 /* ContactsManager.swift in Sources */,
 				E6D766B52A828B53001236FB /* ContactsScreen.swift in Sources */,
+				E69451102A9E351A009A58D1 /* ContactEditScreen.swift in Sources */,
 				E6C7A25F2A794FA500CD9B66 /* BlockAccountButton.swift in Sources */,
 				E6C7A2632A798E6800CD9B66 /* CallActionButton.swift in Sources */,
 			);

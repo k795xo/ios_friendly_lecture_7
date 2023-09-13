@@ -9,15 +9,15 @@ import Foundation
 
 /// Модель для хранения контакта
 struct ContactModel: Identifiable {
-    var id: UUID
+    let id: UUID
     /// Номер телефона в свободном формате
-    let phoneNumber: String
+    var phoneNumber: String
     /// Имя контакта
-    let firstName: String
+    var firstName: String
     /// Фамилия контакта
-    let lastName: String
+    var lastName: String
     /// Флаг заблокированности контакта
     var isBlocked: Bool
     /// Фотография
-    var photoName: String
+    let photoName: String
 }

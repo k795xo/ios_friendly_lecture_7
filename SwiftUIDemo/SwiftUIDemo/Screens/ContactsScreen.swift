@@ -15,7 +15,22 @@ struct ContactsScreen: View {
         NavigationView {
             List {
                 ForEach(contactsManager.contacts) { contact in
-                    NavigationLink(destination: ContactPageScreen(contactModel: contact)) {
+                    NavigationLink(
+                        destination: ContactPageScreen(
+                            contactModel: contact
+                        ).toolbar(content: {
+                            NavigationLink(
+                                destination: ContactEditScreen(
+                                    contactModel: contact,
+                                    saveAction: { newContact in
+                                        contactsManager.save(contact: newContact)
+                                    }
+                                )
+                            ) {
+                                Text("править")
+                            }
+                        })
+                    ) {
                         Text("\(contact.firstName) \(contact.lastName)")
                     }
                 }

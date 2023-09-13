@@ -8,6 +8,13 @@
 import Foundation
 
 class ContactsManager: ObservableObject {
+    /// Сохранение элемента
+    func save(contact: ContactModel) {
+        if let index = contacts.firstIndex(where: { $0.id == contact.id }) {
+            contacts[index] = contact
+        }
+    }
+    
     /// Контакты
     @Published
     var contacts: [ContactModel] = [
