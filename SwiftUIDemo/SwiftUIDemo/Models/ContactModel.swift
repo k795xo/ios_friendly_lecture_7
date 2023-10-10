@@ -21,3 +21,4 @@ struct ContactModel: Identifiable {
     /// Фотография
     let photoName: String
 }
+

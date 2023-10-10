@@ -17,7 +17,16 @@ struct SwiftUIDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                ContactsScreen()
+                TabView {
+                    ContactsScreen()
+                        .tabItem {
+                            Label("Контакты", systemImage: "person.crop.circle.fill")
+                        }
+                    Text("Кнопки")
+                        .tabItem {
+                            Label("Кнопки", systemImage: "apps.iphone") 
+                        }
+                }
                 if callScreenManager.isVisible,
                    let contact = callScreenManager.contact {
                     CallScreen(contactModel: contact)

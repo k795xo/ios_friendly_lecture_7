@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E651C2652A9DFC43008F7088 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E651C2642A9DFC43008F7088 /* ContactsManager.swift */; };
+		E67037932AB1E7820066060E /* ContactModel+createEmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67037922AB1E7820066060E /* ContactModel+createEmptyModel.swift */; };
 		E69451102A9E351A009A58D1 /* ContactEditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E694510F2A9E351A009A58D1 /* ContactEditScreen.swift */; };
 		E6C7A2412A791BAA00CD9B66 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */; };
 		E6C7A2452A791BAB00CD9B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C7A2442A791BAB00CD9B66 /* Assets.xcassets */; };
@@ -20,10 +21,17 @@
 		E6D766B52A828B53001236FB /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D766B42A828B53001236FB /* ContactsScreen.swift */; };
 		E6D766B82A828CC1001236FB /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D766B72A828CC1001236FB /* ContactModel.swift */; };
 		E6D766BC2A829320001236FB /* CallScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D766BB2A829320001236FB /* CallScreenManager.swift */; };
+		E6DCED9D2ACDA26E00143907 /* SwiftUIViewFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DCED9C2ACDA26E00143907 /* SwiftUIViewFirst.swift */; };
+		E6E844062AC31E4D00321F02 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E844052AC31E4D00321F02 /* Color.swift */; };
+		E6E8440B2AC323BD00321F02 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6E844082AC323BD00321F02 /* Inter-Black.ttf */; };
+		E6E8440C2AC323BD00321F02 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6E844092AC323BD00321F02 /* Inter-Bold.ttf */; };
+		E6E8440D2AC323BD00321F02 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6E8440A2AC323BD00321F02 /* Inter-Regular.ttf */; };
+		E6E844102AC3269400321F02 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8440F2AC3269400321F02 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E651C2642A9DFC43008F7088 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		E67037922AB1E7820066060E /* ContactModel+createEmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactModel+createEmptyModel.swift"; sourceTree = "<group>"; };
 		E694510F2A9E351A009A58D1 /* ContactEditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditScreen.swift; sourceTree = "<group>"; };
 		E6C7A23D2A791BAA00CD9B66 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C7A2402A791BAA00CD9B66 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
@@ -37,6 +45,13 @@
 		E6D766B42A828B53001236FB /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		E6D766B72A828CC1001236FB /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		E6D766BB2A829320001236FB /* CallScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallScreenManager.swift; sourceTree = "<group>"; };
+		E6DCED9C2ACDA26E00143907 /* SwiftUIViewFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFirst.swift; sourceTree = "<group>"; };
+		E6E844052AC31E4D00321F02 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E6E844082AC323BD00321F02 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		E6E844092AC323BD00321F02 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		E6E8440A2AC323BD00321F02 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		E6E8440E2AC3246200321F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E6E8440F2AC3269400321F02 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,9 @@
 		E6C7A23F2A791BAA00CD9B66 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E6E8440E2AC3246200321F02 /* Info.plist */,
+				E6E844072AC3238A00321F02 /* fonts */,
+				E6E844042AC31E3F00321F02 /* Extensions */,
 				E6D766BA2A829306001236FB /* Managers */,
 				E6D766B62A828CB1001236FB /* Models */,
 				E6C7A25B2A79499500CD9B66 /* Views */,
@@ -95,6 +113,7 @@
 				E6C7A2592A79491100CD9B66 /* ContactPageScreen.swift */,
 				E694510F2A9E351A009A58D1 /* ContactEditScreen.swift */,
 				E6C7A2602A798C2700CD9B66 /* CallScreen.swift */,
+				E6DCED9C2ACDA26E00143907 /* SwiftUIViewFirst.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -105,6 +124,7 @@
 				E6C7A25C2A7949AC00CD9B66 /* ContactPageActionButton.swift */,
 				E6C7A25E2A794FA500CD9B66 /* BlockAccountButton.swift */,
 				E6C7A2622A798E6800CD9B66 /* CallActionButton.swift */,
+				E6E8440F2AC3269400321F02 /* SwiftUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				E6D766B72A828CC1001236FB /* ContactModel.swift */,
+				E67037922AB1E7820066060E /* ContactModel+createEmptyModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -124,6 +145,24 @@
 				E651C2642A9DFC43008F7088 /* ContactsManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		E6E844042AC31E3F00321F02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E6E844052AC31E4D00321F02 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E6E844072AC3238A00321F02 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E6E844082AC323BD00321F02 /* Inter-Black.ttf */,
+				E6E844092AC323BD00321F02 /* Inter-Bold.ttf */,
+				E6E8440A2AC323BD00321F02 /* Inter-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C7A2482A791BAB00CD9B66 /* Preview Assets.xcassets in Resources */,
+				E6E8440D2AC323BD00321F02 /* Inter-Regular.ttf in Resources */,
+				E6E8440B2AC323BD00321F02 /* Inter-Black.ttf in Resources */,
+				E6E8440C2AC323BD00321F02 /* Inter-Bold.ttf in Resources */,
 				E6C7A2452A791BAB00CD9B66 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,15 +240,19 @@
 			files = (
 				E6C7A2412A791BAA00CD9B66 /* SwiftUIDemoApp.swift in Sources */,
 				E6C7A25D2A7949AC00CD9B66 /* ContactPageActionButton.swift in Sources */,
+				E67037932AB1E7820066060E /* ContactModel+createEmptyModel.swift in Sources */,
 				E6D766B82A828CC1001236FB /* ContactModel.swift in Sources */,
+				E6E844062AC31E4D00321F02 /* Color.swift in Sources */,
 				E6C7A2612A798C2700CD9B66 /* CallScreen.swift in Sources */,
 				E6C7A25A2A79491100CD9B66 /* ContactPageScreen.swift in Sources */,
 				E6D766BC2A829320001236FB /* CallScreenManager.swift in Sources */,
+				E6E844102AC3269400321F02 /* SwiftUIView.swift in Sources */,
 				E651C2652A9DFC43008F7088 /* ContactsManager.swift in Sources */,
 				E6D766B52A828B53001236FB /* ContactsScreen.swift in Sources */,
 				E69451102A9E351A009A58D1 /* ContactEditScreen.swift in Sources */,
 				E6C7A25F2A794FA500CD9B66 /* BlockAccountButton.swift in Sources */,
 				E6C7A2632A798E6800CD9B66 /* CallActionButton.swift in Sources */,
+				E6DCED9D2ACDA26E00143907 /* SwiftUIViewFirst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +384,7 @@
 				DEVELOPMENT_TEAM = 2HQJVT7EM6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +414,7 @@
 				DEVELOPMENT_TEAM = 2HQJVT7EM6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

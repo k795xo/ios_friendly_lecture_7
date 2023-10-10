@@ -8,6 +8,16 @@
 import Foundation
 
 class ContactsManager: ObservableObject {
+    /// Добавление элемента
+    func add(contact: ContactModel) {
+        contacts.append(contact)
+    }
+    
+    /// Удаление
+    func remove(indexSet: IndexSet) {
+        contacts.remove(atOffsets: indexSet)
+    }
+    
     /// Сохранение элемента
     func save(contact: ContactModel) {
         if let index = contacts.firstIndex(where: { $0.id == contact.id }) {

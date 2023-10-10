@@ -11,10 +11,16 @@ struct ContactsScreen: View {
     @EnvironmentObject
     var contactsManager: ContactsManager
     
+    @State private var currentSelection: UUID? = nil
+    
+    private let newContactID: UUID = UUID()
+    
+    @State private var searchText: String = ""
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(contactsManager.contacts) { contact in
+                ForEach(searchResults) { contact in
                     NavigationLink(
                         destination: ContactPageScreen(
                             contactModel: contact
@@ -29,11 +35,43 @@ struct ContactsScreen: View {
                             ) {
                                 Text("править")
                             }
-                        })
+                        }),
+                        tag: contact.id,
+                        selection: $currentSelection
                     ) {
                         Text("\(contact.firstName) \(contact.lastName)")
                     }
                 }
+                .onDelete { indexSet in
+                    contactsManager.remove(indexSet: indexSet)
+                }
+            }
+            .searchable(text: $searchText)
+            .toolbar {
+                NavigationLink(
+                    destination: ContactEditScreen(
+                        contactModel: ContactModel.createEmptyModel(),
+                        saveAction: { newContact in
+                            currentSelection = nil
+                            contactsManager.add(contact: newContact)
+                        }
+                    ),
+                    tag: newContactID,
+                    selection: $currentSelection
+                ) {
+                    Text("создать создать создать создать")
+                        .frame(width: 100)                }
+            }
+        }
+    }
+    
+    var searchResults: [ContactModel] {
+        if searchText.isEmpty {
+            return contactsManager.contacts
+        } else {
+            return contactsManager.contacts.filter { contactModel in
+                contactModel.firstName.contains(searchText) ||
+                contactModel.lastName.contains(searchText)
             }
         }
     }
